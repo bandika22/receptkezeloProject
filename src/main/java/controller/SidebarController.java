@@ -4,10 +4,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
-import javafx.stage.Stage;;
+import javafx.stage.Stage;
+import org.slf4j.LoggerFactory;;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,8 +16,7 @@ import java.util.logging.Logger;
 
 public class SidebarController implements Initializable{
 
-    @FXML
-    private ImageView imageView;
+    protected static final org.slf4j.Logger log = LoggerFactory.getLogger(SidebarController.class);
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -30,20 +28,23 @@ public class SidebarController implements Initializable{
 
 
     @FXML
-    public void close(MouseEvent mouseEvent) {
+    public void close() {
         Stage stage = (Stage) borderPane.getScene().getWindow();
         stage.close();
+        log.info("Closed the app");
     }
 
 
     @FXML
-    public void ui2(MouseEvent mouseEvent) throws IOException {
+    public void ui2() throws IOException {
         loadUI("upload");
+        log.info("Chose the upload scene");
     }
 
     @FXML
-    public void ui3(MouseEvent mouseEvent) {
+    public void ui3() {
         loadUI("search");
+        log.info("Chose the search scene");
     }
 
 

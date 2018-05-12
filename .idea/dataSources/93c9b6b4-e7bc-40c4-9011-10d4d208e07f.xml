@@ -16,9 +16,9 @@
     <schema id="10" parent="1" name="SYSIBM"/>
     <schema id="11" parent="1" name="SYSPROC"/>
     <schema id="12" parent="1" name="SYSSTAT"/>
-    <table id="13" parent="2" name="HOZZAVALO"/>
-    <table id="14" parent="2" name="RECEPT"/>
-    <table id="15" parent="2" name="RECEPT_HOZZAVALO"/>
+    <table id="13" parent="2" name="INGREDIENTS"/>
+    <table id="14" parent="2" name="RECIPE"/>
+    <table id="15" parent="2" name="RECIPE_INGREDIENTS"/>
     <column id="16" parent="13" name="ID">
       <Position>1</Position>
       <DataType>BIGINT(19)|-5</DataType>
@@ -30,11 +30,11 @@
       <Position>2</Position>
       <DataType>VARCHAR(255)|12</DataType>
     </column>
-    <column id="18" parent="13" name="TIPUS">
+    <column id="18" parent="13" name="TYPE">
       <Position>3</Position>
       <DataType>VARCHAR(255)|12</DataType>
     </column>
-    <key id="19" parent="13" name="SQL180511151751150">
+    <key id="19" parent="13" name="SQL180512160657340">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
@@ -46,41 +46,45 @@
       <SequenceIdentity>1</SequenceIdentity>
       <DefaultExpression>GENERATED_BY_DEFAULT</DefaultExpression>
     </column>
-    <column id="21" parent="14" name="LEIRAS">
+    <column id="21" parent="14" name="DESCRIPTION">
       <Position>2</Position>
       <DataType>VARCHAR(255)|12</DataType>
     </column>
-    <column id="22" parent="14" name="NEV">
+    <column id="22" parent="14" name="MEALTYPE">
       <Position>3</Position>
       <DataType>VARCHAR(255)|12</DataType>
     </column>
-    <key id="23" parent="14" name="SQL180511151751350">
+    <column id="23" parent="14" name="NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="24" parent="14" name="SQL180512160657620">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="24" parent="15" name="RECEPT_ID">
+    <column id="25" parent="15" name="RECIPES_ID">
       <Position>1</Position>
       <DataType>BIGINT(19)|-5</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="25" parent="15" name="HOZZAVALO_ID">
+    <column id="26" parent="15" name="INGREDIENTS_ID">
       <Position>2</Position>
       <DataType>BIGINT(19)|-5</DataType>
       <NotNull>1</NotNull>
     </column>
-    <foreign-key id="26" parent="15" name="FKL4F272V5SJU8L4S86D3QJWHSJ">
-      <ColNames>RECEPT_ID</ColNames>
+    <foreign-key id="27" parent="15" name="FK3W1HF25KEUH69VA4PNKA46V4S">
+      <ColNames>RECIPES_ID</ColNames>
       <RefSchemaName>APP</RefSchemaName>
-      <RefTableName>RECEPT</RefTableName>
-      <RefKeyName>SQL180511151751350</RefKeyName>
+      <RefTableName>RECIPE</RefTableName>
+      <RefKeyName>SQL180512160657620</RefKeyName>
       <RefColNames>ID</RefColNames>
     </foreign-key>
-    <foreign-key id="27" parent="15" name="FKBI7CUGI8I68NKRS00QH8AIMPG">
-      <ColNames>HOZZAVALO_ID</ColNames>
+    <foreign-key id="28" parent="15" name="FK6QKFBLV8PEQKUPE2LP3V3GVNC">
+      <ColNames>INGREDIENTS_ID</ColNames>
       <RefSchemaName>APP</RefSchemaName>
-      <RefTableName>HOZZAVALO</RefTableName>
-      <RefKeyName>SQL180511151751150</RefKeyName>
+      <RefTableName>INGREDIENTS</RefTableName>
+      <RefKeyName>SQL180512160657340</RefKeyName>
       <RefColNames>ID</RefColNames>
     </foreign-key>
   </database-model>

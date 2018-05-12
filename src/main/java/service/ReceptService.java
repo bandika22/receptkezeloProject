@@ -6,9 +6,10 @@ import model.Recept;
 import java.util.List;
 
 public interface ReceptService {
-    void createHozzavaloAddToRecept(List<Hozzavalo> hvalo, Recept recept);
-    void createRecept(Recept recept);
-    List<Recept> searchRecept(List <String> hozzavaloList);
-    List<Recept> searchFilteredRecept(List <String> hozzavaloList);
+    void createIngredientsAddToRecipe(List<Hozzavalo> hvalo, Recept recept);
+    void createRecipe(Recept recept);
+    List<Recept> searchRecipe(List <String> hozzavaloList);
+    List<Recept> searchFilteredRecipe(List <String> hozzavaloList);
+    List<Recept> searchContainedRecipe(List <String> hozzavaloList);
     List<Recept> getAllRecept();
 }

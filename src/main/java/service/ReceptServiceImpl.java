@@ -1,29 +1,22 @@
 package service;
 
 import dao.HozzavaloDao;
-import dao.ReceptDAO;
-import impl.HozzavaloImpl;
+import dao.RecipeDAO;
 import model.Hozzavalo;
 import model.Recept;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ReceptServiceImpl implements ReceptService{
 
-    private ReceptDAO dao;
-    private HozzavaloDao hozzavaloDao;
+    private RecipeDAO dao;
 
-    public ReceptServiceImpl(ReceptDAO dao) {
+    public ReceptServiceImpl(RecipeDAO dao) {
         this.dao = dao;
     }
 
-    public ReceptServiceImpl(HozzavaloDao hozzavaloDao) {
-        this.hozzavaloDao = hozzavaloDao;
-    }
-
     @Override
-    public void createHozzavaloAddToRecept(List<Hozzavalo> hozzavaloList, Recept recept) {
+    public void createIngredientsAddToRecipe(List<Hozzavalo> hozzavaloList, Recept recept) {
         /*List<Hozzavalo> createdIngredients = new ArrayList<>();
         for (int i = 0; i < hozzavaloList.size(); i++) {
             createdIngredients.add(hozzavaloList.get(i));
@@ -53,18 +46,23 @@ public class ReceptServiceImpl implements ReceptService{
     }
 
     @Override
-    public void createRecept(Recept recept) {
+    public void createRecipe(Recept recept) {
         dao.persist(recept);
     }
 
     @Override
-    public List<Recept> searchRecept(List<String> hozzavaloList) {
+    public List<Recept> searchRecipe(List<String> hozzavaloList) {
         return dao.searchRecept(hozzavaloList);
     }
 
     @Override
-    public List<Recept> searchFilteredRecept(List<String> hozzavaloList) {
-        return dao.searchFilteredRecept(hozzavaloList);
+    public List<Recept> searchFilteredRecipe(List<String> mealTypeList) {
+        return dao.searchFilteredRecipe(mealTypeList);
+    }
+
+    @Override
+    public List<Recept> searchContainedRecipe(List<String> ingredientsTypeList) {
+        return dao.searchContainedRecipe(ingredientsTypeList);
     }
 
     @Override

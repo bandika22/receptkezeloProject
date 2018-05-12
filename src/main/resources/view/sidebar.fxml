@@ -37,7 +37,7 @@
          <children>
             <ImageView fx:id="imageView" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@icon/Crystal_Project_Exit.png" />
+                  <Image url="@../icon/Crystal_Project_Exit.png" />
                </image>
                <HBox.margin>
                   <Insets right="5.0" />

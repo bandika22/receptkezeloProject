@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="receptKezeloDB" uuid="4b9f7927-efa1-40a0-b128-df2e6735e200">
+    <data-source name="receptKezeloDB" uuid="1df56988-9bc9-42d5-8efb-c3e88b50072d">
       <database-info product="Apache Derby" version="10.14.1.0 - (1808820)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.14.1.0 - (1808820)">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

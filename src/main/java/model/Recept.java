@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@Entity(name = "Recept")
+@Entity(name = "Recipe")
 public class Recept {
 
     @Id
@@ -13,28 +13,27 @@ public class Recept {
     private Long id;
     private String name;
     private String description;
+    private String mealType;
 
     @ManyToMany(cascade = {
             CascadeType.PERSIST,
             CascadeType.MERGE
     })
-    @JoinTable(name = "recept_hozzavalo",
-            joinColumns = @JoinColumn(name = "recept_id"),
-            inverseJoinColumns = @JoinColumn(name = "hozzavalo_id")
-    )
-    private List<Hozzavalo> hozzavalok1 = new ArrayList<>();
+
+    private List<Hozzavalo> ingredients = new ArrayList<>();
 
     public Recept() {
     }
 
-    public Recept(String name, String description) {
+    public Recept(String name, String description, String mealType) {
         this.name = name;
         this.description = description;
+        this.mealType = mealType;
     }
 
     public void addHozzavalo(Hozzavalo hozzavalo){
-        hozzavalok1.add(hozzavalo);
-        hozzavalo.getRecepts().add(this);
+        ingredients.add(hozzavalo);
+        hozzavalo.getRecipes().add(this);
     }
 
     public long getId() {
@@ -61,12 +60,20 @@ public class Recept {
         this.description = leiras;
     }
 
+    public String getMealType() {
+        return mealType;
+    }
+
+    public void setMealType(String mealType) {
+        this.mealType = mealType;
+    }
+
     public List<Hozzavalo> getHozzavalok() {
-        return hozzavalok1;
+        return ingredients;
     }
 
     public void setHozzavalok(List<Hozzavalo> hozzavalok) {
-        this.hozzavalok1 = hozzavalok;
+        this.ingredients = hozzavalok;
     }
 
     @Override
@@ -74,7 +81,7 @@ public class Recept {
         return "Recept: " +
                 "  név: " + name +
                 "  leírás: " + description +
-                "  hozzávalók: " + hozzavalok1;
+                "  hozzávalók: " + ingredients;
     }
 
     @Override
@@ -87,6 +94,6 @@ public class Recept {
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, name, description, hozzavalok1);
+        return Objects.hash(id, name, description, ingredients);
     }
 }

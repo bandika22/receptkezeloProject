@@ -1,30 +1,28 @@
 package app;
 
+import controller.SidebarController;
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import model.DBManager;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import org.slf4j.LoggerFactory;
 
 
 public class Main extends Application {
+
+    protected static final org.slf4j.Logger log = LoggerFactory.getLogger(Main.class);
 
     private double x, y;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/sidebar.fxml"));
+        log.info("The app is started ...");
+        Parent root = FXMLLoader.load(getClass().getResource("/view/sidebar.fxml"));
 
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
@@ -61,16 +59,7 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
 
-    /*    try {
-            String dbURL2 = "jdbc:derby:receptKezeloDB;";
-            Connection conn2 = DriverManager.getConnection(dbURL2);
-            if (conn2 != null) {
-                System.out.println("Connected to database #2");
-            }
 
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }*/
 
     }
 

@@ -1,19 +1,17 @@
 package controller;
 
-import dao.ReceptDAO;
-import impl.ReceptImpl;
-import javafx.event.ActionEvent;
+import app.Main;
+import dao.RecipeDAO;
+import impl.RecipeImpl;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
-import model.DBManager;
-import model.Recept;
-import model.Tipus;
+import model.*;
+import org.slf4j.LoggerFactory;
 import service.ReceptService;
 import service.ReceptServiceImpl;
 
@@ -21,6 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchController {
+
+    protected static final org.slf4j.Logger log = LoggerFactory.getLogger(SearchController.class);
 
     @FXML
     public HBox hboxPane;
@@ -53,141 +53,211 @@ public class SearchController {
     public CheckBox checkBox4;
 
     @FXML
-    private ListView<String> receptView;
+    public CheckBox checkBox11;
 
     @FXML
-    private Label getReceptLeiras;
+    public CheckBox checkBox21;
 
     @FXML
-    private Label getHozzavalo;
+    public CheckBox checkBox31;
+
+    @FXML
+    public CheckBox checkBox41;
+
+    @FXML
+    public TextArea getRecipeDescription;
+
+    @FXML
+    public TextArea getIngredients;
 
 
-    List<String> receptItem = new ArrayList<>();
-    List<Recept> resultRecept;
-    List<Recept> filteredRecept;
+    @FXML
+    private ListView<String> recipeView;
 
-    ReceptDAO dao = new ReceptImpl(DBManager.getInstance());
-    ReceptService receptService = new ReceptServiceImpl(dao);
+
+    private List<String> recipeItems = new ArrayList<>();
+    private List<Recept> resultRecipe;
+    private int count = 0;
+
+    private ReceptService recipeService;
+
+    public SearchController() {
+        RecipeDAO dao = new RecipeImpl(DBManager.getInstance());
+        recipeService = new ReceptServiceImpl(dao);
+    }
 
     public void initialize(){
-        receptView.setVisible(true);
+        recipeView.setVisible(true);
         splitPane.setVisible(true);
-        checkBox1.setText(Tipus.HÚS.name());
-        checkBox2.setText(Tipus.KÖRET.name());
-        checkBox3.setText(Tipus.ZÖLDSÉG.name());
-        checkBox4.setText(Tipus.GYÜMÖLCS.name());
+
+        checkBox1.setText(EtelTipus.FŐÉTEL.name());
+        checkBox2.setText(EtelTipus.LEVES.name());
+        checkBox3.setText(EtelTipus.ELŐÉTEL.name());
+        checkBox4.setText(EtelTipus.DESSZERT.name());
+
+        checkBox11.setText(Tipus.HÚS.name());
+        checkBox21.setText(Tipus.ZÖLDSÉG.name());
+        checkBox31.setText(Tipus.TEJTERMÉK.name());
+        checkBox41.setText(Tipus.GYÜMÖLCS.name());
 
     }
 
     @FXML
-    public void handleClickListView(MouseEvent event) {
+    public void handleClickListView() {
 
-        if (!resultRecept.isEmpty()) {
-            receptView.setVisible(true);
-            String element = receptView.getSelectionModel().getSelectedItem();
+        if (!resultRecipe.isEmpty()) {
+            recipeView.setVisible(true);
+            String element = recipeView.getSelectionModel().getSelectedItem();
 
-            for (int i = 0; i < resultRecept.size(); i++) {
-                if (element.equals(resultRecept.get(i).getName())) {
-                    getReceptLeiras.setText(resultRecept.get(i).getDescription());
-                    getHozzavalo.setText(resultRecept.get(i).getHozzavalok().toString());
+            for (Recept aResultRecipe : resultRecipe) {
+                if (element.equals(aResultRecipe.getName())) {
+                    getRecipeDescription.setText(aResultRecipe.getDescription());
+                    getIngredients.setText("");
+                    for (int j = 0; j < aResultRecipe.getHozzavalok().size(); j++) {
+                        getIngredients.appendText(aResultRecipe.getHozzavalok().get(j).getName());
+                        getIngredients.appendText("\n");
+                    }
                 }
             }
+            log.info("Choose the " + element + " recipe");
         }
-
-
     }
-    int db = 0;
+
     @FXML
-    public void addSearchField(MouseEvent event) {
+    public void addSearchField() {
+
+        log.info("Add a new TextField for search ...");
+
         TextField newField = new TextField();
         VBox.setMargin(newField, new Insets(0,0,5,0));
         newField.setPrefWidth(160.0);
         newField.setPrefHeight(25.0);
-        if (0 <= db && db < 5) {
+        if (0 <= count && count < 5) {
             vboxPane0.getChildren().add(newField);
-            db++;
+            count++;
         }
-        else if(5 <= db && db < 10){
+        else if(5 <= count && count < 10){
             vboxPane1.getChildren().add(newField);
-            db++;
+            count++;
         }
-        else if(10 <= db && db < 15){
+        else if(10 <= count && count < 15){
             vboxPane2.getChildren().add(newField);
-            db++;
+            count++;
         }
-        else
+        else{
             warningMessage.setText("Maximum 15 hozzávalót adhatsz hozzá !");
+            log.debug("Tried to add more TextField than 15");
+        }
     }
 
     @FXML
-    public void searchItems(MouseEvent event) {
+    public void searchItems() {
+        log.info("Searced for the recipes");
 
-        getReceptLeiras.setText("");
-        getHozzavalo.setText("");
+        getRecipeDescription.setText("");
+        getIngredients.setText("");
 
         warningMessage.setText("");
-        receptItem.clear();
+        recipeItems.clear();
 
-        List<String> hozzavaloList = new ArrayList<>();
+        List<String> ingredientsList = new ArrayList<>();
 
         for (Node node : hboxPane.getChildren()) {
             if (node instanceof VBox) {
                 for (Node node1 : ((VBox) node).getChildren()) {
                     if (node1 instanceof TextField) {
-                        String searchItem = ((TextField) node1).getText().toUpperCase();
-                        hozzavaloList.add(searchItem);
-                        ((TextField) node1).clear();
-                        System.out.println(searchItem);
+                        String searchItem = ((TextField) node1).getText().trim().toUpperCase();
+                        ingredientsList.add(searchItem);
                     }
                 }
             }
         }
-        resultRecept = receptService.searchRecept(hozzavaloList);
+        resultRecipe = recipeService.searchRecipe(ingredientsList);
 
-        if(resultRecept.isEmpty()){
+        if(resultRecipe.isEmpty()){
             warningMessage.setText("Nincs a keresésnek megfelelő recept az adatbázisban");
         } else {
-            receptView.setVisible(true);
+            recipeView.setVisible(true);
             splitPane.setVisible(true);
-            for (int i = 0; i < resultRecept.size(); i++){
-                receptItem.add(resultRecept.get(i).getName());
+            for (Recept aResultRecipe : resultRecipe) {
+                recipeItems.add(aResultRecipe.getName());
             }
         }
-        receptView.getItems().setAll(receptItem);
-        receptView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        recipeView.getItems().setAll(recipeItems);
+        recipeView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
     }
 
     @FXML
-    public void filter(ActionEvent event) {
-        /*getReceptLeiras.setText("");
-        getHozzavalo.setText("");
+    public void filter() {
+
+        getRecipeDescription.setText("");
+        getIngredients.setText("");
         warningMessage.setText("");
-        receptItem.clear();
+        recipeItems.clear();
+
 
         List<String> typeList = new ArrayList<>();
 
         if(checkBox1.isSelected())
-            typeList.add(checkBox1.getText());
+            typeList.add(checkBox1.getText().toUpperCase());
         if(checkBox2.isSelected())
-            typeList.add(checkBox2.getText());
+            typeList.add(checkBox2.getText().toUpperCase());
         if(checkBox3.isSelected())
-            typeList.add(checkBox3.getText());
+            typeList.add(checkBox3.getText().toUpperCase());
         if(checkBox4.isSelected())
-            typeList.add(checkBox4.getText());
+            typeList.add(checkBox4.getText().toUpperCase());
 
+        log.info("Filtered the recipes: " + typeList.toString());
 
-        filteredRecept = receptService.searchFilteredRecept(typeList);
+        List<Recept> filteredRecipe = recipeService.searchFilteredRecipe(typeList);
 
-        for (int i = 0; i < filteredRecept.size(); i++){
-            receptItem.add(filteredRecept.get(i).getName());
+        for (Recept aFilteredRecipe : filteredRecipe) {
+            recipeItems.add(aFilteredRecipe.getName());
         }
-        System.out.println(receptItem.toString());
-        System.out.println(receptService.searchFilteredRecept(typeList).toString());*/
 
-        /*receptView.getItems().setAll(receptItem);
-        receptView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);*/
+        recipeView.getItems().setAll(recipeItems);
+        recipeView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
 
+        checkBox1.setSelected(false);
+        checkBox2.setSelected(false);
+        checkBox3.setSelected(false);
+        checkBox4.setSelected(false);
 
-       // System.out.println(receptService.getAllRecept());
+    }
+
+    @FXML
+    public void contains() {
+
+        getRecipeDescription.setText("");
+        getIngredients.setText("");
+        warningMessage.setText("");
+        recipeItems.clear();
+
+        List<String> containList = new ArrayList<>();
+
+        if(checkBox11.isSelected())
+            containList.add(checkBox11.getText().toUpperCase());
+        if(checkBox21.isSelected())
+            containList.add(checkBox21.getText().toUpperCase());
+        if(checkBox31.isSelected())
+            containList.add(checkBox31.getText().toUpperCase());
+        if(checkBox41.isSelected())
+            containList.add(checkBox41.getText().toUpperCase());
+
+        log.info("Filtered the recipes: " + containList.toString());
+
+        List<Recept> filteredRecipe = recipeService.searchContainedRecipe(containList);
+
+        for (Recept aFilteredRecipe : filteredRecipe) {
+            recipeItems.add(aFilteredRecipe.getName());
+        }
+
+        recipeView.getItems().setAll(recipeItems);
+        recipeView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+
+        checkBox11.setSelected(false);
+        checkBox21.setSelected(false);
+        checkBox31.setSelected(false);
+        checkBox41.setSelected(false);
     }
 }

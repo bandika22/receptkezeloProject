@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -25,8 +26,8 @@
                         <Insets bottom="10.0" />
                     </padding>
                 </VBox>
-                <Label fx:id="message" layoutX="20.0" layoutY="457.0" />
-                <Button layoutX="18.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleButton1Action" prefHeight="26.0" prefWidth="200.0" text="Hozzáad" />
+                <Label fx:id="message" layoutX="18.0" layoutY="526.0" />
+                <Button layoutX="18.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleButton1Action" prefHeight="26.0" prefWidth="200.0" text="Hozzáad" />
                 <Text fill="WHITE" layoutX="19.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recept leírás:">
                     <font>
                         <Font size="14.0" />
@@ -34,16 +35,17 @@
                 </Text>
                 <ImageView accessibleRole="BUTTON" fitHeight="26.0" fitWidth="43.0" layoutX="257.0" layoutY="79.0" onMouseClicked="#AddTextField1" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@icon/plus_PNG61.png" />
+                        <Image url="@../icon/plus_PNG61.png" />
                     </image>
                 </ImageView>
               <Text layoutX="13.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 32; -fx-fill: white;" text="Recept feltöltése" wrappingWidth="600.0" />
             <Label fx:id="warningMessage" layoutX="299.0" layoutY="27.0" prefHeight="16.0" prefWidth="288.0" style="-fx-text-fill: #ff2dcc;" />
             <ImageView accessibleRole="BUTTON" fitHeight="26.0" fitWidth="43.0" layoutX="266.0" layoutY="112.0" onMouseClicked="#deleteTextField" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@icon/minus.png" />
+                  <Image url="@../icon/minus.png" />
                </image>
             </ImageView>
+            <ComboBox fx:id="mealTypeCB" layoutX="18.0" layoutY="404.0" prefHeight="26.0" prefWidth="200.0" />
             </children>
         </Pane>
     </children>

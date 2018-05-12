@@ -10,18 +10,19 @@ import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class HozzavaloImpl implements HozzavaloDao {
+public class IngredientsImpl implements HozzavaloDao {
 
     private EntityManager entityManager;
 
-    public HozzavaloImpl(EntityManager entityManager) {
+    public IngredientsImpl(EntityManager entityManager) {
+
         this.entityManager = entityManager;
     }
 
     @Override
     public List<Hozzavalo> getAllHozzavalo() {
         TypedQuery<Hozzavalo> query = entityManager.createQuery(
-                "SELECT h FROM Hozzavalo h", Hozzavalo.class);
+                "SELECT ing FROM Ingredients ing", Hozzavalo.class);
         return query.getResultList();
     }
 

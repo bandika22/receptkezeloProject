@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@Entity(name = "Hozzavalo")
+@Entity(name = "Ingredients")
 public class Hozzavalo {
 
     @Id
@@ -13,26 +13,25 @@ public class Hozzavalo {
     private long id;
     private String name;
 
-    @ManyToMany(mappedBy = "hozzavalok1")
-    private List<Recept> recepts = new ArrayList<>();
+    @ManyToMany(mappedBy = "ingredients")
+    private List<Recept> recipes = new ArrayList<>();
 
-    private String tipus;
+    private String type;
 
     public Hozzavalo() {
     }
 
-    public Hozzavalo( String name, String tipus) {
+    public Hozzavalo( String name, String type) {
         this.name = name;
-        this.tipus = tipus;
+        this.type = type;
     }
 
-
-    public List<Recept> getRecepts() {
-        return recepts;
+    public List<Recept> getRecipes() {
+        return recipes;
     }
 
-    public void setRecepts(List<Recept> recepts) {
-        this.recepts = recepts;
+    public void setRecipes(List<Recept> recipes) {
+        this.recipes = recipes;
     }
 
     public long getId() {
@@ -52,11 +51,11 @@ public class Hozzavalo {
     }
 
     public String getTipus() {
-        return tipus;
+        return type;
     }
 
-    public void setTipus(String tipus) {
-        this.tipus = tipus;
+    public void setTipus(String type) {
+        this.type = type;
     }
 
     @Override
@@ -75,6 +74,6 @@ public class Hozzavalo {
     @Override
     public int hashCode() {
 
-        return Objects.hash(recepts);
+        return Objects.hash(recipes);
     }
 }

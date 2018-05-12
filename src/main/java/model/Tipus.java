@@ -5,4 +5,7 @@ public enum Tipus {
     KÖRET,
     ZÖLDSÉG,
     GYÜMÖLCS,
+    FŰSZER,
+    TEJTERMÉK,
+    ALAPANYAG,
 }

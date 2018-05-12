@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -20,16 +21,16 @@
          <font>
             <Font size="24.0" />
          </font></Text>
-      <ListView fx:id="receptView" layoutX="14.0" layoutY="237.0" onMouseClicked="#handleClickListView" prefHeight="320.0" prefWidth="200.0" />
-      <SplitPane fx:id="splitPane" dividerPositions="0.49056603773584906" layoutX="226.0" layoutY="237.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="360.0" AnchorPane.leftAnchor="226.0">
+      <ListView fx:id="recipeView" layoutX="14.0" layoutY="237.0" onMouseClicked="#handleClickListView" prefHeight="285.0" prefWidth="200.0" AnchorPane.topAnchor="270.0" />
+      <SplitPane fx:id="splitPane" dividerPositions="0.49056603773584906" layoutX="226.0" layoutY="237.0" orientation="VERTICAL" prefHeight="285.0" prefWidth="360.0" AnchorPane.leftAnchor="226.0" AnchorPane.topAnchor="270.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Label fx:id="getReceptLeiras" contentDisplay="CENTER" layoutX="9.0" layoutY="7.0" prefHeight="139.0" prefWidth="337.0" wrapText="true" />
+                  <TextArea fx:id="getRecipeDescription" editable="false" maxWidth="360.0" prefHeight="135.0" prefWidth="360.0" />
                </children></AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="199.0" prefWidth="358.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="109.0" prefWidth="358.0">
                <children>
-                  <Label fx:id="getHozzavalo" layoutX="11.0" layoutY="12.0" prefHeight="132.0" prefWidth="337.0" wrapText="true" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="11.0" />
+                  <TextArea fx:id="getIngredients" editable="false" maxWidth="360.0" prefHeight="140.0" prefWidth="360.0" />
                </children></AnchorPane>
         </items>
       </SplitPane>
@@ -54,21 +55,31 @@
       </HBox>
       <ImageView accessibleRole="BUTTON" fitHeight="26.0" fitWidth="40.0" layoutX="10.0" layoutY="46.0" onMouseClicked="#addSearchField" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@icon/plus_PNG61.png" />
+            <Image url="@../icon/plus_PNG61.png" />
          </image>
       </ImageView>
-      <Text fx:id="warningMessage" layoutX="18.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: Red;" wrappingWidth="564.0" />
+      <Text fx:id="warningMessage" layoutX="19.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: Red;" wrappingWidth="564.0" />
       <ImageView accessibleRole="BUTTON" fitHeight="26.0" fitWidth="40.0" layoutX="17.0" layoutY="80.0" onMouseClicked="#searchItems" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@icon/Search-icon.png" />
+            <Image url="@../icon/Search-icon.png" />
          </image>
       </ImageView>
-      <Label layoutX="15.0" layoutY="202.0" text="Tartalmazzon:" />
+      <Label layoutX="15.0" layoutY="202.0" text="Étel típusa" AnchorPane.leftAnchor="15.0" />
       <CheckBox fx:id="checkBox1" layoutX="125.0" layoutY="203.0" mnemonicParsing="false" />
       <CheckBox fx:id="checkBox2" layoutX="226.0" layoutY="203.0" mnemonicParsing="false" />
       <CheckBox fx:id="checkBox3" layoutX="321.0" layoutY="203.0" mnemonicParsing="false" />
       <CheckBox fx:id="checkBox4" layoutX="420.0" layoutY="204.0" mnemonicParsing="false" />
-      <Button onAction="#filter" layoutX="555.0" layoutY="200.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0" text="OK">
+      <Button layoutX="535.0" layoutY="200.0" mnemonicParsing="false" onAction="#filter" prefHeight="26.0" prefWidth="46.0" text="Szűrés">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Label layoutX="20.0" layoutY="234.0" text="Tartalmazzon:" AnchorPane.leftAnchor="15.0" />
+      <CheckBox fx:id="checkBox11" layoutX="125.0" layoutY="233.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkBox21" layoutX="226.0" layoutY="233.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkBox31" layoutX="321.0" layoutY="233.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkBox41" layoutX="420.0" layoutY="234.0" mnemonicParsing="false" />
+      <Button layoutX="535.0" layoutY="230.0" mnemonicParsing="false" onAction="#contains" prefHeight="26.0" prefWidth="46.0" text="Szűrés">
          <font>
             <Font size="9.0" />
          </font>
