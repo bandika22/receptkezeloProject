@@ -17,7 +17,7 @@
     <schema id="11" parent="1" name="SYSPROC"/>
     <schema id="12" parent="1" name="SYSSTAT"/>
     <table id="13" parent="2" name="INGREDIENTS"/>
-    <table id="14" parent="2" name="RECIPE"/>
+    <table id="14" parent="2" name="RECEPT"/>
     <table id="15" parent="2" name="RECIPE_INGREDIENTS"/>
     <column id="16" parent="13" name="ID">
       <Position>1</Position>
@@ -76,7 +76,7 @@
     <foreign-key id="27" parent="15" name="FK3W1HF25KEUH69VA4PNKA46V4S">
       <ColNames>RECIPES_ID</ColNames>
       <RefSchemaName>APP</RefSchemaName>
-      <RefTableName>RECIPE</RefTableName>
+      <RefTableName>RECEPT</RefTableName>
       <RefKeyName>SQL180512164410060</RefKeyName>
       <RefColNames>ID</RefColNames>
     </foreign-key>

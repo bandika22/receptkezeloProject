@@ -1,12 +1,18 @@
 package model;
 
+import controller.UploadController;
+import org.slf4j.LoggerFactory;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@Entity(name = "Recipe")
+
+@Entity(name = "Recept")
 public class Recept {
+
+    protected static final org.slf4j.Logger log = LoggerFactory.getLogger(Recept.class);
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,6 +20,7 @@ public class Recept {
     private String name;
     private String description;
     private String mealType;
+
 
     @ManyToMany(cascade = {
             CascadeType.PERSIST,
@@ -25,54 +32,107 @@ public class Recept {
     public Recept() {
     }
 
+    /**
+     * Konstruktor, amely reprezentálja a recept objektumot.
+     * @param name A recept neve.
+     * @param description A recept leírása
+     * @param mealType A recept típusa.
+     */
     public Recept(String name, String description, String mealType) {
         this.name = name;
         this.description = description;
         this.mealType = mealType;
+        log.info("Create a " + name +" recipe.");
     }
 
-    public void addHozzavalo(Hozzavalo hozzavalo){
-        ingredients.add(hozzavalo);
-        hozzavalo.getRecipes().add(this);
+    /**
+     * Hozzáadja a létrehozott recepthez a hozzávalót.
+     * @param ingredients hozzávaló, melyet hozzáad a létrehozott recepthez.
+     */
+    public void addIngredients(Hozzavalo ingredients){
+        this.ingredients.add(ingredients);
+        ingredients.getRecipes().add(this);
+        log.info("Add a(n) "+ ingredients.getName() + " ingredient to " + this.name + " recipe");
     }
 
+    /**
+     * A recept egyedi azonosítójával tér vissza
+     * @return A recept egyedi azonosítója.
+     */
     public long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    /**
+     * Beállítja a recept egyedi azonosítóját
+     * @param id a recept egyedi azonosítója
+     */
+    public void setId(Long id) {
         this.id = id;
     }
+
+    /**
+     * Visszaadja a recept nevét.
+     * @return A recept neve.
+     */
 
     public String getName() {
         return name;
     }
 
-    public void setName(String nev) {
-        this.name = nev;
+    /**
+     * Beállítja a recept nevét.
+     * @param name A recept neve.
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 
+    /**
+     * Visszaadja a recept leírását.
+     * @return A recept leírása.
+     */
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String leiras) {
-        this.description = leiras;
+    /**
+     * Beállítja a recept leírását.
+     * @param description A recept leírása.
+     */
+    public void setDescription(String description) {
+        this.description = description;
     }
 
+    /**
+     * Visszaadja a recept típusát.
+     * @return A recept típusa.
+     */
     public String getMealType() {
         return mealType;
     }
 
+    /**
+     * Beállítja a recept típusát.
+     * @param mealType A recept típusa.
+     */
     public void setMealType(String mealType) {
         this.mealType = mealType;
     }
 
-    public List<Hozzavalo> getHozzavalok() {
+    /**
+     * Visszaadja a recepthez tartozó hozzávalók listáját.
+     * @return A recepthez tartozó hozzávalók listája.
+     */
+    public List<Hozzavalo> getIngredients() {
         return ingredients;
     }
 
-    public void setHozzavalok(List<Hozzavalo> hozzavalok) {
+    /**
+     * Beállítja a recepthez tartozó hozzávalók listáját.
+     * @param hozzavalok A recepthez tartozó hozzávalók listája.
+     */
+    public void setIngredients(List<Hozzavalo> hozzavalok) {
         this.ingredients = hozzavalok;
     }
 

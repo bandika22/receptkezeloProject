@@ -55,13 +55,13 @@
       </HBox>
       <ImageView accessibleRole="BUTTON" fitHeight="26.0" fitWidth="40.0" layoutX="10.0" layoutY="46.0" onMouseClicked="#addSearchField" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../icon/plus_PNG61.png" />
+            <Image url="@icon/plus_PNG61.png" />
          </image>
       </ImageView>
       <Text fx:id="warningMessage" layoutX="19.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: Red;" wrappingWidth="564.0" />
       <ImageView accessibleRole="BUTTON" fitHeight="26.0" fitWidth="40.0" layoutX="17.0" layoutY="80.0" onMouseClicked="#searchItems" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../icon/Search-icon.png" />
+            <Image url="@icon/Search-icon.png" />
          </image>
       </ImageView>
       <Label layoutX="15.0" layoutY="202.0" text="Étel típusa" AnchorPane.leftAnchor="15.0" />

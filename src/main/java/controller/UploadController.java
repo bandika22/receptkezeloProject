@@ -1,7 +1,7 @@
 package controller;
 
 import dao.RecipeDAO;
-import impl.RecipeImpl;
+import dao.impl.RecipeImpl;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
@@ -15,8 +15,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import model.*;
 import org.slf4j.LoggerFactory;
-import service.ReceptService;
-import service.ReceptServiceImpl;
+import service.RecipeService;
+import service.RecipeServiceImpl;
+import utility.DBManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +31,7 @@ public class UploadController {
     public Label warningMessage;
 
     @FXML
-    public ComboBox<EtelTipus> mealTypeCB;
+    public ComboBox<MealType> mealTypeCB;
 
     @FXML
     private TextArea recipeDescriptionField;
@@ -49,22 +50,23 @@ public class UploadController {
 
     private HBox hBox;
     private TextField newField;
-    private ComboBox<Tipus> typeComboBox;
+    private ComboBox<IngredientsType> typeComboBox;
     private String ingredientsName;
     private String typeName;
-    private int db = 0;
+    private int count = 0;
 
     private RecipeDAO recipeDAO = new RecipeImpl(DBManager.getInstance());
-    private ReceptService receptServiceDAO = new ReceptServiceImpl(recipeDAO);
+    private RecipeService recipeServiceDAO = new RecipeServiceImpl(recipeDAO);
+
 
     public void initialize(){
         mealTypeCB.getItems().addAll(
-                EtelTipus.ELŐÉTEL,
-                EtelTipus.LEVES,
-                EtelTipus.FŐÉTEL,
-                EtelTipus.DESSZERT
+                MealType.ELŐÉTEL,
+                MealType.LEVES,
+                MealType.FŐÉTEL,
+                MealType.DESSZERT
         );
-        mealTypeCB.setValue(EtelTipus.FŐÉTEL);
+        mealTypeCB.setValue(MealType.FŐÉTEL);
     }
 
 
@@ -90,7 +92,7 @@ public class UploadController {
                     empty = true;
                     break;
                 } else if (((TextField) node).getText().matches("-?\\d+(\\.\\d+)?")) {
-                    log.warn("Tried to add number instead of recipe name");
+                    log.warn("Tried to add number(" + ((TextField) node).getText() + ") instead of recipe name");
                     message.setText("Számokat nem adhatsz meg");
                     message.setTextFill(Color.RED);
                     empty = true;
@@ -150,8 +152,8 @@ public class UploadController {
             } else {
 
                 Recept recept = new Recept(recipeName, recipeDescription, mealType);
-                receptServiceDAO.createIngredientsAddToRecipe(ingredientsList, recept);
-                receptServiceDAO.createRecipe(recept);
+                recipeServiceDAO.createIngredientsAddToRecipe(ingredientsList, recept);
+                recipeServiceDAO.createRecipe(recept);
 
 
 
@@ -163,7 +165,8 @@ public class UploadController {
                 log.info("Add a recipe successfully");
 
             }
-        }
+        } else
+            log.warn("The list of ingredients are empty");
     }
 
     @FXML
@@ -174,15 +177,15 @@ public class UploadController {
         hBox = new HBox();
         typeComboBox = new ComboBox<>();
         typeComboBox.getItems().addAll(
-                Tipus.HÚS,
-                Tipus.KÖRET,
-                Tipus.ZÖLDSÉG,
-                Tipus.GYÜMÖLCS,
-                Tipus.FŰSZER,
-                Tipus.TEJTERMÉK,
-                Tipus.ALAPANYAG
+                IngredientsType.HÚS,
+                IngredientsType.KÖRET,
+                IngredientsType.ZÖLDSÉG,
+                IngredientsType.GYÜMÖLCS,
+                IngredientsType.FŰSZER,
+                IngredientsType.TEJTERMÉK,
+                IngredientsType.ALAPANYAG
         );
-        typeComboBox.setValue(Tipus.HÚS);
+        typeComboBox.setValue(IngredientsType.HÚS);
 
         newField = new TextField();
         HBox.setMargin(newField, new Insets(0, 10, 10, 20));
@@ -192,11 +195,11 @@ public class UploadController {
         newField.setPrefWidth(150.0);
         newField.setPrefHeight(10.0);
         typeComboBox.setPrefWidth(100.0);
-        if (db <= 13) {
+        if (count <= 13) {
             pane_main_grid.getChildren().add(hBox);
             hBox.getChildren().add(newField);
             hBox.getChildren().add(typeComboBox);
-            db++;
+            count++;
         } else {
             warningMessage.setText("Elérte a maximálisan bevihető hozzávalót!");
             log.warn("Tried to add new TextField more than 13");
@@ -208,6 +211,6 @@ public class UploadController {
             log.info("Deleted the last TextField");
             hBox.getChildren().remove(newField);
             hBox.getChildren().remove(typeComboBox);
-            db--;
+            count--;
     }
 }

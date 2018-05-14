@@ -38,13 +38,13 @@ public class SidebarController implements Initializable{
     @FXML
     public void ui2() throws IOException {
         loadUI("upload");
-        log.info("Chose the upload scene");
+        log.info("Choose the upload scene");
     }
 
     @FXML
     public void ui3() {
         loadUI("search");
-        log.info("Chose the search scene");
+        log.info("Choose the search scene");
     }
 
 
@@ -53,8 +53,9 @@ public class SidebarController implements Initializable{
 
         try {
             root = FXMLLoader.load(getClass().getResource("/" + ui + ".fxml"));
+            log.info("Load the " + ui + " scene");
         } catch (IOException ex){
-            Logger.getLogger(SidebarController.class.getName()).log(Level.SEVERE, null, ex);
+            log.warn("Couldn't load the scene " + ex);
         }
         borderPane.setCenter(root);
     }

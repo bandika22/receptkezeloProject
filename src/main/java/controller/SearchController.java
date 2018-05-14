@@ -1,8 +1,7 @@
 package controller;
 
-import app.Main;
 import dao.RecipeDAO;
-import impl.RecipeImpl;
+import dao.impl.RecipeImpl;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
@@ -12,8 +11,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import model.*;
 import org.slf4j.LoggerFactory;
-import service.ReceptService;
-import service.ReceptServiceImpl;
+import service.RecipeService;
+import service.RecipeServiceImpl;
+import utility.DBManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,26 +79,26 @@ public class SearchController {
     private List<Recept> resultRecipe;
     private int count = 0;
 
-    private ReceptService recipeService;
+    private RecipeService recipeService;
 
     public SearchController() {
         RecipeDAO dao = new RecipeImpl(DBManager.getInstance());
-        recipeService = new ReceptServiceImpl(dao);
+        recipeService = new RecipeServiceImpl(dao);
     }
 
     public void initialize(){
         recipeView.setVisible(true);
         splitPane.setVisible(true);
 
-        checkBox1.setText(EtelTipus.FŐÉTEL.name());
-        checkBox2.setText(EtelTipus.LEVES.name());
-        checkBox3.setText(EtelTipus.ELŐÉTEL.name());
-        checkBox4.setText(EtelTipus.DESSZERT.name());
+        checkBox1.setText(MealType.FŐÉTEL.name());
+        checkBox2.setText(MealType.LEVES.name());
+        checkBox3.setText(MealType.ELŐÉTEL.name());
+        checkBox4.setText(MealType.DESSZERT.name());
 
-        checkBox11.setText(Tipus.HÚS.name());
-        checkBox21.setText(Tipus.ZÖLDSÉG.name());
-        checkBox31.setText(Tipus.TEJTERMÉK.name());
-        checkBox41.setText(Tipus.GYÜMÖLCS.name());
+        checkBox11.setText(IngredientsType.HÚS.name());
+        checkBox21.setText(IngredientsType.ZÖLDSÉG.name());
+        checkBox31.setText(IngredientsType.TEJTERMÉK.name());
+        checkBox41.setText(IngredientsType.GYÜMÖLCS.name());
 
     }
 
@@ -113,8 +113,8 @@ public class SearchController {
                 if (element.equals(aResultRecipe.getName())) {
                     getRecipeDescription.setText(aResultRecipe.getDescription());
                     getIngredients.setText("");
-                    for (int j = 0; j < aResultRecipe.getHozzavalok().size(); j++) {
-                        getIngredients.appendText(aResultRecipe.getHozzavalok().get(j).getName());
+                    for (int j = 0; j < aResultRecipe.getIngredients().size(); j++) {
+                        getIngredients.appendText(aResultRecipe.getIngredients().get(j).getName());
                         getIngredients.appendText("\n");
                     }
                 }
@@ -152,7 +152,7 @@ public class SearchController {
 
     @FXML
     public void searchItems() {
-        log.info("Searced for the recipes");
+        log.info("Searched for the recipes");
 
         getRecipeDescription.setText("");
         getIngredients.setText("");
@@ -176,12 +176,14 @@ public class SearchController {
 
         if(resultRecipe.isEmpty()){
             warningMessage.setText("Nincs a keresésnek megfelelő recept az adatbázisban");
+            log.info("The search was unsuccessfully");
         } else {
             recipeView.setVisible(true);
             splitPane.setVisible(true);
             for (Recept aResultRecipe : resultRecipe) {
                 recipeItems.add(aResultRecipe.getName());
             }
+            log.info("The search was successfully");
         }
         recipeView.getItems().setAll(recipeItems);
         recipeView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);

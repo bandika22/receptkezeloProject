@@ -1,6 +1,9 @@
 package model;
 
-public enum Tipus {
+/**
+ * Hozzávalók típusa.
+ */
+public enum IngredientsType {
     HÚS,
     KÖRET,
     ZÖLDSÉG,

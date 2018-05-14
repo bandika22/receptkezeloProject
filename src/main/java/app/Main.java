@@ -1,6 +1,5 @@
 package app;
 
-import controller.SidebarController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,7 +21,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         log.info("The app is started ...");
-        Parent root = FXMLLoader.load(getClass().getResource("/view/sidebar.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/sidebar.fxml"));
 
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);

@@ -34,7 +34,7 @@
       <Position>3</Position>
       <DataType>VARCHAR(255)|12</DataType>
     </column>
-    <key id="19" parent="13" name="SQL180512160657340">
+    <key id="19" parent="13" name="SQL180513124511020">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
@@ -58,7 +58,7 @@
       <Position>4</Position>
       <DataType>VARCHAR(255)|12</DataType>
     </column>
-    <key id="24" parent="14" name="SQL180512160657620">
+    <key id="24" parent="14" name="SQL180513124511270">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
@@ -77,14 +77,14 @@
       <ColNames>RECIPES_ID</ColNames>
       <RefSchemaName>APP</RefSchemaName>
       <RefTableName>RECIPE</RefTableName>
-      <RefKeyName>SQL180512160657620</RefKeyName>
+      <RefKeyName>SQL180513124511270</RefKeyName>
       <RefColNames>ID</RefColNames>
     </foreign-key>
     <foreign-key id="28" parent="15" name="FK6QKFBLV8PEQKUPE2LP3V3GVNC">
       <ColNames>INGREDIENTS_ID</ColNames>
       <RefSchemaName>APP</RefSchemaName>
       <RefTableName>INGREDIENTS</RefTableName>
-      <RefKeyName>SQL180512160657340</RefKeyName>
+      <RefKeyName>SQL180513124511020</RefKeyName>
       <RefColNames>ID</RefColNames>
     </foreign-key>
   </database-model>
