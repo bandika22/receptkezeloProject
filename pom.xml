@@ -42,12 +42,12 @@
         </developer>
     </developers>
 
-    <!--<scm>
-        <connection>scm:git:git@github.com:</connection>
-        <url>scm:git:git@github.com:</url>
-        <developerConnection>scm:git:git@github.com:</developerConnection>
+    <scm>
+        <connection>scm:git:git@github.com:/bandika22/receptkezeloProject.git</connection>
+        <url>scm:git:git@github.com:/bandika22/receptkezeloProject.git</url>
+        <developerConnection>scm:git:git@github.com:/bandika22/receptkezeloProject.git</developerConnection>
         <tag>HEAD</tag>
-    </scm>-->
+    </scm>
 
     <dependencies>
         <dependency>
