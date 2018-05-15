@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Tue May 15 09:28:33 CEST 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0163-62b3-62c1-0000056c5550 
-on database directory /home/andika/Desktop/ReceptKezelo/receptKezeloDB with class loader java.net.URLClassLoader@776d5e43 
+Tue May 15 09:50:05 CEST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0163-62c7-1860-0000026d1578 
+on database directory /home/andika/Desktop/ReceptKezelo/receptKezeloDB with class loader sun.misc.Launcher$AppClassLoader@232204a1 
 Loaded from file:/home/andika/.m2/repository/org/apache/derby/derby/10.14.1.0/derby-10.14.1.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_161-b12
