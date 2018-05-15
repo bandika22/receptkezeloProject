@@ -8,7 +8,7 @@ import java.util.Map;
 
 public interface RecipeDAO extends GenericDAO<Recept,Long> {
     List<Recept> getAllRecipe();
-    List<Recept> searchRecipe(List<String> hozzavaloList);
-    List<Recept> searchFilteredRecipe(List<String> hozzavaloList);
-    List<Recept> searchContainedRecipe(List<String> hozzavaloList);
+    List<Recept> searchRecipe(List<String> ingredientsList);
+    List<Recept> searchFilteredRecipe(List<String> mealTypeList, List<String> ingredientsList);
+    List<Recept> searchContainedRecipe(List<String> ingredientsTypeList, List<String> mealTypeList, List<String> ingredientsList);
 }

@@ -50,22 +50,25 @@ public class RecipeServiceImpl implements RecipeService {
      * Visszaadja azoknak a recepteknek a listáját, mely a kereső függvény eredményeit tartalmazva
      * szűri még a listát a recept típusának megadásával.
      * @param mealTypeList Olyan lista, mellyel szűrni szeretnénk az eredményül kapott receptünk listáját.
+     * @param ingredientsList Megadjuk a hozzávalólistát, amelyre a keresés feltétele teljesült, hogy az eredményben végezzük el a szűrést.
      * @return Recept lista.
      */
     @Override
-    public List<Recept> searchFilteredRecipe(List<String> mealTypeList) {
-        return dao.searchFilteredRecipe(mealTypeList);
+    public List<Recept> searchFilteredRecipe(List<String> mealTypeList, List<String> ingredientsList) {
+        return dao.searchFilteredRecipe(mealTypeList, ingredientsList);
     }
 
     /**
      * Visszaadja azoknak a recepteknek a listáját, mely a kereső függvény eredményeit tartalmazva
      * szűri még a listát a hozzávaló típusának megadásával, amelyet a recept mindenképp tartalmazzon.
      * @param ingredientsTypeList Olyan lista, mellyel szűrni szeretnénk az eredményül kapott receptünk listáját.
+     * @param mealTypeList Ha szűrtünk ételtípusra, akkor az erre leszűrt receptlistában fogja elvégezni a további szűrést.
+     * @param ingredientsList Ha ételtípusra nem szűrtünk, akkor a szűrést a hozzávaló keresés eredménye alapján fogja elvégezni.
      * @return Recept lista.
      */
     @Override
-    public List<Recept> searchContainedRecipe(List<String> ingredientsTypeList) {
-        return dao.searchContainedRecipe(ingredientsTypeList);
+    public List<Recept> searchContainedRecipe(List<String> ingredientsTypeList, List<String> mealTypeList, List<String> ingredientsList) {
+        return dao.searchContainedRecipe(ingredientsTypeList, mealTypeList, ingredientsList);
     }
 
     /**

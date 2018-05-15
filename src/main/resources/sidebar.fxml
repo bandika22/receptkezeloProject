@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SidebarController">
+<BorderPane fx:id="borderPane"  prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SidebarController">
    <left>
-      <VBox alignment="TOP_CENTER" opacity="0.74" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;" BorderPane.alignment="CENTER">
          <children>
-            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#ui2" opacity="0.75" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #404040;" text="Recept hozzáadása" textFill="WHITE">
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#ui2" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #606060;" text="Recept hozzáadása" textFill="WHITE">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -21,7 +21,7 @@
                   <Font name="System Bold Italic" size="13.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#ui3" opacity="0.75" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #404040;" text="Recept keresés" textFill="WHITE">
+            <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#ui3" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #606060;" text="Recept keresés" textFill="WHITE">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -33,7 +33,7 @@
       </VBox>
    </left>
    <top>
-      <HBox alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" opacity="0.75" prefHeight="20.0" prefWidth="800.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="800.0" style="-fx-background-color: #606060;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fx:id="imageView" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -45,6 +45,13 @@ public class Recept {
         log.info("Create a " + name +" recipe.");
     }
 
+    public Recept(String name, String description, String mealType, List<Hozzavalo> ingredients) {
+        this.name = name;
+        this.description = description;
+        this.mealType = mealType;
+        this.ingredients = ingredients;
+    }
+
     /**
      * Hozzáadja a létrehozott recepthez a hozzávalót.
      * @param ingredients hozzávaló, melyet hozzáad a létrehozott recepthez.
@@ -136,24 +143,33 @@ public class Recept {
         this.ingredients = hozzavalok;
     }
 
+    /**
+     * Visszaadja a recept objectum attribútumait Stringként.
+     * @return String, ami a recept objectum attribútumait tartalmazza.
+     */
     @Override
     public String toString() {
         return "Recept: " +
                 "  név: " + name +
                 "  leírás: " + description +
+                "  étel típusa: " + mealType +
                 "  hozzávalók: " + ingredients;
     }
 
+    /**
+     * Összehasonlít két recept objectumot és igazzal tér vissza, ha ezek megegyeznek.
+     * @param o Recept objectum.
+     * @return Igaz, ha a két objectum megegyezik, egyébként hamis.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Recept)) return false;
-        return id != null && id.equals(((Recept) o).id);
+        if (o == null || getClass() != o.getClass()) return false;
+        Recept recept = (Recept) o;
+        return Objects.equals(name, recept.name) &&
+                Objects.equals(description, recept.description) &&
+                Objects.equals(mealType, recept.mealType) &&
+                Objects.equals(ingredients, recept.ingredients);
     }
 
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(id, name, description, ingredients);
-    }
 }

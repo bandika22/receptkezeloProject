@@ -16,6 +16,7 @@ public class HozzavaloTest {
     @Before
     public void setUp() throws Exception {
         ingredients = new Hozzavalo();
+
     }
 
     @Test

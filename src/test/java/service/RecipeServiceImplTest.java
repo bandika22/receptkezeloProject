@@ -5,93 +5,120 @@ import dao.impl.RecipeImpl;
 import model.MealType;
 import model.Hozzavalo;
 import model.IngredientsType;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.junit.Before;
 import utility.DBManager;
 import model.Recept;
 import org.junit.Test;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
-@RunWith(MockitoJUnitRunner.class)
+
 public class RecipeServiceImplTest {
 
 
+    private List<String> searchItem;
+    private List<String> ingredients;
+    private List<String> mealType;
+    private List<Recept> solutionRecipe;
 
-    @Mock
-    RecipeDAO dao = new RecipeImpl(DBManager.getInstance());
+    private RecipeDAO dao= new RecipeImpl(DBManager.getInstance());
+    private RecipeService recipeService= new RecipeServiceImpl(dao);
 
 
-    private Recept createTestRecipeList() {
+    private Recept createTestRecipe() {
 
-        Recept recipe = new Recept();
         List<Hozzavalo> ingredients = new ArrayList<>();
-        ingredients.add(new Hozzavalo("Liszt", IngredientsType.ALAPANYAG.name()));
-        ingredients.add(new Hozzavalo("Csirkemell", IngredientsType.HÚS.name()));
-        ingredients.add(new Hozzavalo("Bors", IngredientsType.FŰSZER.name()));
-        recipe.setName("Pizza");
-        recipe.setDescription("Nagyon finom a pizza");
-        recipe.setMealType(MealType.LEVES.name());
-        recipe.setIngredients(ingredients);
+        ingredients.add(new Hozzavalo("Liszt1", IngredientsType.ALAPANYAG.name()));
+        ingredients.add(new Hozzavalo("Csirkemell1", IngredientsType.HÚS.name()));
+        ingredients.add(new Hozzavalo("Bors1", IngredientsType.FŰSZER.name()));
+        Recept recipe = new Recept("Pizza", "Nagyon finom.", MealType.ELŐÉTEL.name());
+        recipeService.createIngredientsAddToRecipe(ingredients, recipe);
+        recipeService.createRecipe(recipe);
 
         return recipe;
-
     }
+
+    private Recept recipe = createTestRecipe();
 
     @Test
     public void searchRecipe() {
-        List<String> searchItem = new ArrayList<>();
-        List<Recept> solutionRecipe = new ArrayList<>();
-        searchItem.add("Liszt");
-        searchItem.add("Csirkemell");
-        searchItem.add("Bors");
-        dao.persist(createTestRecipeList());
-        solutionRecipe.add(createTestRecipeList());
-        Mockito.when(dao.searchRecipe(searchItem)).thenReturn(solutionRecipe);
-        List<Recept> recipe = dao.searchRecipe(searchItem);
-        assertEquals("Pizza", recipe.get(0).getName());
-        assertEquals("Nagyon finom a pizza", recipe.get(0).getDescription());
-        assertEquals("LEVES", recipe.get(0).getMealType());
-        assertEquals("Liszt", recipe.get(0).getIngredients().get(0).getName());
-        assertEquals("Csirkemell", recipe.get(0).getIngredients().get(1).getName());
-        assertEquals("Bors", recipe.get(0).getIngredients().get(2).getName());
-        Mockito.verify(dao).searchRecipe(searchItem);
+
+        searchItem = new ArrayList<>();
+        searchItem.add("Liszt1");
+        searchItem.add("Csirkemell1");
+        searchItem.add("Bors1");
+        searchItem.add("Bors2");
+        solutionRecipe = recipeService.searchRecipe(searchItem);
+
+        if (solutionRecipe.isEmpty())
+            assertEquals(recipe.getId(), solutionRecipe.get(0).getId());
+        else {
+            for (int i = 0; i < solutionRecipe.size(); i++) {
+                if (recipe.getId() == solutionRecipe.get(i).getId()) {
+                    assertEquals(recipe.getId(), solutionRecipe.get(i).getId());
+                    assertEquals(recipe.getName(), solutionRecipe.get(i).getName());
+                    assertEquals(recipe.getDescription(), solutionRecipe.get(i).getDescription());
+                    assertEquals(recipe.getMealType(), solutionRecipe.get(i).getMealType());
+                }
+            }
+        }
     }
 
-    @Test
+   @Test
     public void searchFilteredRecipe() {
-        List<String> filteredRecipe = new ArrayList<>();
-        List<Recept> solutionRecipe = new ArrayList<>();
-        filteredRecipe.add("LEVES");
-        dao.persist(createTestRecipeList());
-        solutionRecipe.add(createTestRecipeList());
-        Mockito.when(dao.searchFilteredRecipe(filteredRecipe)).thenReturn(solutionRecipe);
-        List<Recept> recipe = dao.searchFilteredRecipe(filteredRecipe);
-        assertEquals("Pizza", recipe.get(0).getName());
-        assertEquals("Nagyon finom a pizza", recipe.get(0).getDescription());
-        assertEquals("LEVES", recipe.get(0).getMealType());
-        Mockito.verify(dao).searchFilteredRecipe(filteredRecipe);
+       ingredients = new ArrayList<>();
+       List<Recept> filteredRecipe;
+       mealType = new ArrayList<>();
+       mealType.add(MealType.ELŐÉTEL.name());
+
+       for (int i = 0; i < recipe.getIngredients().size(); i++)
+           ingredients.add(recipe.getIngredients().get(i).getName());
+
+
+       filteredRecipe = recipeService.searchFilteredRecipe(mealType, ingredients);
+
+       if (filteredRecipe.isEmpty())
+           assertEquals(recipe.getMealType(), filteredRecipe.get(0).getMealType());
+       else {
+           for (int i = 0; i < filteredRecipe.size(); i++) {
+               if (recipe.getId() == filteredRecipe.get(i).getId()) {
+                   assertEquals(recipe.getMealType(), filteredRecipe.get(i).getMealType());
+               }
+           }
+       }
+
     }
 
     @Test
     public void searchContainedRecipe() {
-        List<String> containedRecipe = new ArrayList<>();
-        List<Recept> solutionRecipe = new ArrayList<>();
-        containedRecipe.add("HÚS");
-        dao.persist(createTestRecipeList());
-        solutionRecipe.add(createTestRecipeList());
-        Mockito.when(dao.searchFilteredRecipe(containedRecipe)).thenReturn(solutionRecipe);
-        List<Recept> recipe = dao.searchFilteredRecipe(containedRecipe);
-        assertEquals("Pizza", recipe.get(0).getName());
-        assertEquals("Nagyon finom a pizza", recipe.get(0).getDescription());
-        assertEquals("LEVES", recipe.get(0).getMealType());
-        assertEquals("HÚS", recipe.get(0).getIngredients().get(1).getTipus());
-        Mockito.verify(dao).searchFilteredRecipe(containedRecipe);
+        ingredients = new ArrayList<>();
+        mealType = new ArrayList<>();
+        mealType.add(recipe.getMealType());
+
+        List<String> ingredientsTypeList = new ArrayList<>();
+        ingredientsTypeList.add(IngredientsType.HÚS.name());
+
+        for (int i = 0; i < recipe.getIngredients().size(); i++)
+            ingredients.add(recipe.getIngredients().get(i).getName());
+
+        List<Recept> filteredRecipe;
+
+        filteredRecipe = recipeService.searchContainedRecipe(ingredientsTypeList,mealType, ingredients);
+
+        if (filteredRecipe.isEmpty())
+            assertEquals(recipe.getMealType(), filteredRecipe.get(0).getMealType());
+        else {
+            for (int i = 0; i < filteredRecipe.size(); i++) {
+                if (recipe.getId() == filteredRecipe.get(i).getId()) {
+                    assertEquals(recipe.getId(), filteredRecipe.get(i).getId());
+                }
+            }
+        }
+
     }
 
 }

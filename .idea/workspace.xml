@@ -1,128 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/model/Recept.java" line="143" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/model/Recept.java" line="155" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1df56988-9bc9-42d5-8efb-c3e88b50072d.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/1df56988-9bc9-42d5-8efb-c3e88b50072d.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93c9b6b4-e7bc-40c4-9011-10d4d208e07f.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ReceptKezelo.iml" afterPath="$PROJECT_DIR$/ReceptKezelo.iml" />
+      <change beforePath="$PROJECT_DIR$/ReceptKezelo.iml" afterPath="$PROJECT_DIR$/RecipeManager.iml" />
       <change beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
-      <change beforePath="$PROJECT_DIR$/file.log" afterPath="$PROJECT_DIR$/file.log" />
+      <change beforePath="$PROJECT_DIR$/file.log" afterPath="" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/db.lck" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/dbex.lck" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/log/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/log/log.ctrl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/log/log1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/log/logmirror.ctrl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c10.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c101.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c111.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c121.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c130.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c141.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c150.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c161.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c171.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c180.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c191.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c1a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c1b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c1c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c1d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c1e0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c1f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c20.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c200.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c211.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c221.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c230.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c241.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c251.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c260.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c271.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c281.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c290.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c2a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c2b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c2c1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c2d0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c2e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c2f0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c300.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c31.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c311.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c321.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c331.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c340.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c351.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c361.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c371.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c380.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c391.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c3a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c3b1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c3c0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c3d1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c3e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c3f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c400.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c41.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c411.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c421.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c430.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c441.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c451.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c461.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c470.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c481.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c490.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4a1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4d0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4e1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4f1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c500.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c51.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c511.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c60.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c71.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c81.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c90.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/ca1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/cb1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/cc0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/cd1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/ce1.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/cf0.dat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/receptKezeloDB/service.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/db.lck" afterPath="$PROJECT_DIR$/receptKezeloDB/db.lck" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/log/log.ctrl" afterPath="$PROJECT_DIR$/receptKezeloDB/log/log.ctrl" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/log/log1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/log/log1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/receptKezeloDB/log/logmirror.ctrl" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c10.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c10.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c101.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c101.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c111.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c111.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c121.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c121.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c130.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c130.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c141.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c141.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c150.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c150.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c161.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c161.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c171.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c171.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c180.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c180.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c1a1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c1a1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c1b1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c1b1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c20.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c20.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c200.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c200.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c211.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c211.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c221.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c221.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c230.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c230.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c241.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c241.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c31.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c31.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c380.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c380.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c391.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c391.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c3a1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c3a1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c3b1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c3b1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c400.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c400.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c41.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c41.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c411.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c411.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c421.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c421.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c490.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c490.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4a1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c4a1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4b0.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c4b0.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4c1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c4c1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4d0.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c4d0.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4e1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c4e1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c4f1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c4f1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c51.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c51.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c60.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c60.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c81.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c81.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/c90.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/c90.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/ca1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/ca1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/cb1.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/cb1.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/seg0/cf0.dat" afterPath="$PROJECT_DIR$/receptKezeloDB/seg0/cf0.dat" />
+      <change beforePath="$PROJECT_DIR$/receptKezeloDB/service.properties" afterPath="$PROJECT_DIR$/receptKezeloDB/service.properties" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/SearchController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SidebarController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/SidebarController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UploadController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/UploadController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/HozzavaloDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/IngredientsDao.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/RecipeDAO.java" afterPath="$PROJECT_DIR$/src/main/java/dao/RecipeDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/impl/IngredientsImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/impl/RecipeImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/DBManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/EtelTipus.java" afterPath="$PROJECT_DIR$/src/main/java/model/MealType.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Hozzavalo.java" afterPath="$PROJECT_DIR$/src/main/java/model/Hozzavalo.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Recept.java" afterPath="$PROJECT_DIR$/src/main/java/model/Recept.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Tipus.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ReceptService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ReceptServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/service/RecipeServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/RecipeService.java" afterPath="$PROJECT_DIR$/src/main/java/service/RecipeService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/RecipeServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/service/RecipeServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/search.fxml" afterPath="$PROJECT_DIR$/src/main/resources/search.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/sidebar.fxml" afterPath="$PROJECT_DIR$/src/main/resources/sidebar.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/upload.fxml" afterPath="$PROJECT_DIR$/src/main/resources/upload.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/search.fxml" afterPath="$PROJECT_DIR$/src/main/resources/search.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sidebar.fxml" afterPath="$PROJECT_DIR$/src/main/resources/sidebar.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/tinylog.properties" afterPath="$PROJECT_DIR$/src/main/resources/logback.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/upload.fxml" afterPath="$PROJECT_DIR$/src/main/resources/upload.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/HozzavaloTest.java" afterPath="$PROJECT_DIR$/src/test/java/model/HozzavaloTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/RecipeServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/service/RecipeServiceImplTest.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,6 +91,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ReceptKezelo$HozzavaloTest.coverage" NAME="HozzavaloTest Coverage Results" MODIFIED="1526338752855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/ReceptKezelo$RecipeServiceImplTest.coverage" NAME="RecipeServiceImplTest Coverage Results" MODIFIED="1526341066506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>service.*</FILTER>
+    </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -193,15 +158,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Recept.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Recept.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-              <folding>
-                <element signature="e#1642#1643#0" expanded="true" />
-                <element signature="e#1667#1668#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="403">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="92" lean-forward="false" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipeServiceImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/RecipeServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1512">
+              <caret line="98" column="25" lean-forward="false" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,58 +191,28 @@
       <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/UploadController.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReceptTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/model/ReceptTest.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
-              <caret line="211" column="48" lean-forward="false" selection-start-line="211" selection-start-column="48" selection-end-line="211" selection-end-column="48" />
+              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchController.java">
+      <file leaf-file-name="HozzavaloTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/model/HozzavaloTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-958">
-              <caret line="185" column="37" lean-forward="false" selection-start-line="185" selection-start-column="37" selection-end-line="185" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="94" lean-forward="false" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SidebarController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/SidebarController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecipeImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-419">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1382">
-              <caret line="77" column="19" lean-forward="false" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+            <state relative-caret-position="108">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -269,28 +221,18 @@
       <file leaf-file-name="IngredientsImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/IngredientsImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hozzavalo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Hozzavalo.java">
+      <file leaf-file-name="RecipeImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="39" column="58" lean-forward="false" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IngredientsDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/IngredientsDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="1008">
+              <caret line="107" column="13" lean-forward="false" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -320,6 +262,13 @@
       <find>log</find>
       <find>org</find>
       <find>jbo</find>
+      <find>lice</find>
+      <find>enforce</find>
+      <find>ch</find>
+      <find>app</find>
+      <find>jboss</find>
+      <find>3.3.0</find>
+      <find>sys</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -338,28 +287,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/sidebar.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Main1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/SidebarController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/SearchController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/upload.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/UploadController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/impl/HozzavaloImpl.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4b9f7927-efa1-40a0-b128-df2e6735e200/console_1.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/dd083bec-33e5-4ba7-a9d1-7774927427cc/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Tipus.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/809dead9-9d2c-4bac-9fee-016d5dddf941/console_1.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1df56988-9bc9-42d5-8efb-c3e88b50072d/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ReceptDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/impl/ReceptImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/impl/IngredientsImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/RecipeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/impl/RecipeImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/search.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/tinylog.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/model/Recipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/DBManager.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f18be31d-ea2a-4181-8baf-9f81a621eed8/console.sql" />
@@ -369,26 +301,43 @@
         <option value="$PROJECT_DIR$/src/main/java/service/ReceptService.java" />
         <option value="$PROJECT_DIR$/src/main/java/utility/DBManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/EtelTipus.java" />
-        <option value="$PROJECT_DIR$/src/test/java/model/HozzavaloTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/RecipeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/IngredientsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/IngredientsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/IngredientsImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/HozzavaloDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/IngredientsType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/RecipeServiceImpl.java" />
         <option value="$PROJECT_DIR$/checkstyle.xml" />
         <option value="$PROJECT_DIR$/src/test/java/model/ReceptTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/service/RecipeServiceImplTest.java" />
         <option value="$PROJECT_DIR$/ReceptKezelo.iml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Recept.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Hozzavalo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/SidebarController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/RecipeDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/RecipeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/service/RecipeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/app/package.info" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/SidebarController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/search.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/sidebar.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/upload.fxml" />
+        <option value="$PROJECT_DIR$/RecipeManager.iml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Hozzavalo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Recept.java" />
+        <option value="$PROJECT_DIR$/src/test/java/model/HozzavaloTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/RecipeServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -417,11 +366,11 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="y" value="24" />
+    <option name="width" value="1853" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -442,6 +391,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -474,14 +425,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReceptKezelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReceptKezelo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -492,22 +435,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReceptKezelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReceptKezelo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ReceptKezelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ReceptKezelo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReceptKezelo" type="b2602c69:ProjectViewProjectNode" />
@@ -533,9 +460,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -552,7 +477,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Derby (Embedded)&#10;Derby (Remote)" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/ProgtechBeadando-master" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3816092" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -566,18 +491,21 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/view" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/java/sample" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/view" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/sample" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/utility" />
+      <recent name="$PROJECT_DIR$/src/main/java/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/model" />
+      <recent name="$PROJECT_DIR$/src/main/java/dao/impl" />
+      <recent name="$PROJECT_DIR$/src/main/java/dao" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="model" />
@@ -595,7 +523,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecipeServiceImplTest.searchContainedRecipe">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -620,12 +548,14 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ReceptKezelo" />
+      <module name="" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="compile" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="exec:java" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -642,18 +572,18 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="RecipeServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HozzavaloTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="service.*" />
+          <option name="PATTERN" value="model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="ReceptKezelo" />
+      <module name="RecipeManager" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.RecipeServiceImplTest" />
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.HozzavaloTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -667,23 +597,23 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RecipeServiceImplTest.createRecipe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecipeServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="ReceptKezelo" />
+      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.RecipeServiceImplTest" />
-      <option name="METHOD_NAME" value="createRecipe" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -787,6 +717,18 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ReceptKezelo" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -841,19 +783,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.createRecipe" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchRecipe" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchFilteredRecipe" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchContainedRecipe" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchRecipe" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchFilteredRecipe" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchContainedRecipe" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.HozzavaloTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchContainedRecipe" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchFilteredRecipe" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchRecipe" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.createRecipe" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HozzavaloTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchContainedRecipe" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchFilteredRecipe" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RecipeServiceImplTest.searchRecipe" />
       </list>
     </recent_temporary>
   </component>
@@ -901,66 +843,80 @@
       <workItem from="1526135322970" duration="26906000" />
       <workItem from="1526170083014" duration="2659000" />
       <workItem from="1526206113307" duration="9519000" />
-      <workItem from="1526216827875" duration="36500000" />
+      <workItem from="1526216827875" duration="36772000" />
+      <workItem from="1526296322628" duration="368000" />
+      <workItem from="1526303465350" duration="30823000" />
+      <workItem from="1526337193260" duration="671000" />
+      <workItem from="1526338151449" duration="2173000" />
+      <workItem from="1526340641674" duration="3318000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RecipeServiceImplTest_searchContainedRecipe - 2018.05.13 at 21h 32m 09s.xml">
-      <configuration name="RecipeServiceImplTest.searchContainedRecipe" configurationId="JUnit" />
+    <history-entry file="RecipeServiceImplTest - 2018.05.15 at 01h 32m 34s.xml">
+      <configuration name="RecipeServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchFilteredRecipe - 2018.05.13 at 21h 29m 17s.xml">
+    <history-entry file="RecipeServiceImplTest - 2018.05.15 at 01h 32m 56s.xml">
+      <configuration name="RecipeServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecipeServiceImplTest - 2018.05.15 at 01h 33m 45s.xml">
+      <configuration name="RecipeServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecipeServiceImplTest - 2018.05.15 at 01h 34m 09s.xml">
+      <configuration name="RecipeServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecipeServiceImplTest - 2018.05.15 at 01h 34m 52s.xml">
+      <configuration name="RecipeServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecipeServiceImplTest - 2018.05.15 at 01h 35m 21s.xml">
+      <configuration name="RecipeServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecipeServiceImplTest - 2018.05.15 at 01h 36m 48s.xml">
+      <configuration name="RecipeServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecipeServiceImplTest - 2018.05.15 at 01h 38m 00s.xml">
+      <configuration name="RecipeServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecipeServiceImplTest_searchFilteredRecipe - 2018.05.14 at 19h 50m 58s.xml">
       <configuration name="RecipeServiceImplTest.searchFilteredRecipe" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchFilteredRecipe - 2018.05.13 at 21h 29m 38s.xml">
+    <history-entry file="RecipeServiceImplTest_searchFilteredRecipe - 2018.05.14 at 19h 51m 27s.xml">
       <configuration name="RecipeServiceImplTest.searchFilteredRecipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchFilteredRecipe - 2018.05.13 at 21h 31m 23s.xml">
-      <configuration name="RecipeServiceImplTest.searchFilteredRecipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchRecipe - 2018.05.13 at 21h 18m 35s.xml">
-      <configuration name="RecipeServiceImplTest.searchRecipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchRecipe - 2018.05.13 at 21h 19m 45s.xml">
-      <configuration name="RecipeServiceImplTest.searchRecipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchRecipe - 2018.05.13 at 21h 24m 48s.xml">
-      <configuration name="RecipeServiceImplTest.searchRecipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchRecipe - 2018.05.13 at 21h 25m 29s.xml">
-      <configuration name="RecipeServiceImplTest.searchRecipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchRecipe - 2018.05.13 at 21h 26m 12s.xml">
-      <configuration name="RecipeServiceImplTest.searchRecipe" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecipeServiceImplTest_searchRecipe - 2018.05.13 at 21h 27m 04s.xml">
-      <configuration name="RecipeServiceImplTest.searchRecipe" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327140000" />
+    <option name="totallyTimeSpent" value="364765000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1853" height="1048" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277487" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2631288" sideWeight="0.5109034" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3405876" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21835268" sideWeight="0.43369734" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18684356" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.138322" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18428335" sideWeight="0.56630266" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.002767017" sideWeight="0.48909658" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -968,53 +924,54 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.138322" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.138322" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279396" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33764833" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40929705" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39229023" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -1031,7 +988,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1040,71 +997,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/add795fa/5cc1916a-ed3c-4e51-bc1c-4ab46e1a5cc1/APP.RECEPT" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5cc1916a-ed3c-4e51-bc1c-4ab46e1a5cc1/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/add795fa/0b8246af-f1b7-4828-9494-814e69916784/APP.RECEPT" />
-    <entry file="das://table:/add795fa/0b8246af-f1b7-4828-9494-814e69916784/APP.INGREDIENTS" />
-    <entry file="das://table:/add795fa/0b8246af-f1b7-4828-9494-814e69916784/APP.RECIPE_INGREDIENTS" />
-    <entry file="das://table:/add795fa/0b8246af-f1b7-4828-9494-814e69916784/APP.RECEPT_INGREDIENTS" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8246af-f1b7-4828-9494-814e69916784/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/add795fa/27364f18-3704-4f68-8fca-b2ddd36b280a/APP.INGREDIENTS" />
-    <entry file="das://table:/add795fa/27364f18-3704-4f68-8fca-b2ddd36b280a/APP.RECIPE_INGREDIENTS" />
-    <entry file="das://table:/add795fa/27364f18-3704-4f68-8fca-b2ddd36b280a/APP.RECIPE" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/27364f18-3704-4f68-8fca-b2ddd36b280a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file.log">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/add795fa/ac947c2a-7ccf-464b-bda1-d7e9fb279877/APP.RECEPT_HOZZAVALO" />
-    <entry file="das://table:/add795fa/ac947c2a-7ccf-464b-bda1-d7e9fb279877/APP.RECEPT" />
-    <entry file="das://table:/add795fa/ac947c2a-7ccf-464b-bda1-d7e9fb279877/APP.HOZZAVALO" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ac947c2a-7ccf-464b-bda1-d7e9fb279877/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/receptKezeloDB/service.properties" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f18be31d-ea2a-4181-8baf-9f81a621eed8/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,38 +1013,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sidebar.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utility/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,141 +1024,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/IngredientsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/IngredientsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/IngredientsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/IngredientsImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/IngredientsService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/IngredientsServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/model/IngredientsType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/RecipeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstyle.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstyle.tld" />
     <entry file="file://$PROJECT_DIR$/checkstyle.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/HozzavaloTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="24" column="78" lean-forward="false" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/ReceptTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/clover/src/app/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/service/RecipeServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReceptKezelo.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/RecipeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="73" column="7" lean-forward="false" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Recept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding>
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1667#1668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Hozzavalo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="39" column="58" lean-forward="false" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/clover/src/app/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/IngredientsDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1299,58 +1054,295 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/RecipeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/RecipeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="128" lean-forward="false" selection-start-line="12" selection-start-column="128" selection-end-line="12" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/file.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/derby.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/package.info" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/SidebarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="55" column="47" lean-forward="false" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+        <state relative-caret-position="162">
+          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/IngredientsImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/UploadController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/search.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="211" column="48" lean-forward="false" selection-start-line="211" selection-start-column="48" selection-end-line="211" selection-end-column="48" />
+        <state relative-caret-position="306">
+          <caret line="17" column="120" lean-forward="false" selection-start-line="17" selection-start-column="120" selection-end-line="17" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sidebar.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/upload.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Recept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="161" column="20" lean-forward="false" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/RecipeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="54" column="7" lean-forward="false" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Hozzavalo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-958">
-          <caret line="185" column="37" lean-forward="false" selection-start-line="185" selection-start-column="37" selection-end-line="185" selection-end-column="37" />
+        <state relative-caret-position="186">
+          <caret line="250" column="84" lean-forward="false" selection-start-line="250" selection-start-column="83" selection-end-line="250" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecipeManager.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="29" column="81" lean-forward="false" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/ReceptTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/HozzavaloTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/IngredientsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/RecipeServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="98" column="25" lean-forward="false" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1382">
-          <caret line="77" column="19" lean-forward="false" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+        <state relative-caret-position="403">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file.log">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-555">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="94" lean-forward="false" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
+          <caret line="11" column="92" lean-forward="false" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/RecipeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="107" column="13" lean-forward="false" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1409,7 +1401,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ReceptKezelo</last-edited>
+          <last-edited>RecipeManager</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

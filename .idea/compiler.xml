@@ -17,10 +17,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ReceptKezelo" />
+        <module name="RecipeManager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ReceptKezelo" target="1.8" />
+      <module name="RecipeManager" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

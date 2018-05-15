@@ -6,12 +6,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import org.slf4j.LoggerFactory;;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 
 public class SidebarController implements Initializable{
@@ -36,7 +36,7 @@ public class SidebarController implements Initializable{
 
 
     @FXML
-    public void ui2() throws IOException {
+    public void ui2() {
         loadUI("upload");
         log.info("Choose the upload scene");
     }

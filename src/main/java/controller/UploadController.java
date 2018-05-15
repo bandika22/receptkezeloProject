@@ -54,6 +54,7 @@ public class UploadController {
     private String ingredientsName;
     private String typeName;
     private int count = 0;
+    private boolean isExist = false;
 
     private RecipeDAO recipeDAO = new RecipeImpl(DBManager.getInstance());
     private RecipeService recipeServiceDAO = new RecipeServiceImpl(recipeDAO);
@@ -150,19 +151,32 @@ public class UploadController {
                 message.setTextFill(Color.RED);
                 log.warn("Tried to upload a recipe without ingredients");
             } else {
+                Recept recipeIsEquals = new Recept(recipeName, recipeDescription, mealType, ingredientsList);
+                for (int i = 0; i < recipeServiceDAO.getAllRecipe().size(); i++){
+                    if (recipeIsEquals.equals(recipeServiceDAO.getAllRecipe().get(i))){
 
-                Recept recept = new Recept(recipeName, recipeDescription, mealType);
-                recipeServiceDAO.createIngredientsAddToRecipe(ingredientsList, recept);
-                recipeServiceDAO.createRecipe(recept);
+                        isExist = true;
+                        break;
+                    } else {
+                        isExist = false;
+                    }
+                }
 
+                if(!isExist){
+                    Recept recipe = new Recept(recipeName, recipeDescription, mealType);
+                    recipeServiceDAO.createIngredientsAddToRecipe(ingredientsList, recipe);
+                    recipeServiceDAO.createRecipe(recipe);
+                    message.setText("Sikeresen hozzáadtad a receptet!");
+                    message.setTextFill(Color.GREEN);
+                    pane_main_grid.getChildren().clear();
+                    log.info("Add a recipe successfully!");
+                } else {
+                    pane_main_grid.getChildren().clear();
+                    message.setText("Ez a recept már létezik!");
+                    message.setTextFill(Color.RED);
+                    log.info("The recipe is already exist!");
+                }
 
-
-                message.setText("Sikeresen hozzáadtad a receptet!");
-                message.setTextFill(Color.GREEN);
-
-                pane_main_grid.getChildren().clear();
-
-                log.info("Add a recipe successfully");
 
             }
         } else

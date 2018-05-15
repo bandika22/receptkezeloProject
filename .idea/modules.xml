@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ReceptKezelo.iml" filepath="$PROJECT_DIR$/ReceptKezelo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecipeManager.iml" filepath="$PROJECT_DIR$/RecipeManager.iml" />
     </modules>
   </component>
 </project>

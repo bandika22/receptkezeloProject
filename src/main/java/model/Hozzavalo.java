@@ -109,22 +109,27 @@ public class Hozzavalo {
         recipe.getIngredients().add(this);
     }
 
+    /**
+     * Visszaadja a hozzávaló nevét Stringként.
+     * @return A hozzávaló nevével.
+     */
     @Override
     public String toString() {
         return name;
     }
 
+    /**
+     * Összehasonlít két hozzávaló objectumot és igazzal tér vissza, ha ezek megegyeznek.
+     * @param o Hozzávaló objectum.
+     * @return Igaz,, ha a két objectum megegyezik, egyébként hamis.
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Hozzavalo hozzavalo = (Hozzavalo) o;
-        return Objects.equals(name, hozzavalo.name);
+        return Objects.equals(name, hozzavalo.name) &&
+                Objects.equals(type, hozzavalo.type);
     }
 
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(recipes);
-    }
 }

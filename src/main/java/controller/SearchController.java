@@ -70,7 +70,6 @@ public class SearchController {
     @FXML
     public TextArea getIngredients;
 
-
     @FXML
     private ListView<String> recipeView;
 
@@ -150,6 +149,8 @@ public class SearchController {
         }
     }
 
+    private List<String> ingredientsList = new ArrayList<>();
+    private List<String> typeList = new ArrayList<>();
     @FXML
     public void searchItems() {
         log.info("Searched for the recipes");
@@ -160,7 +161,7 @@ public class SearchController {
         warningMessage.setText("");
         recipeItems.clear();
 
-        List<String> ingredientsList = new ArrayList<>();
+
 
         for (Node node : hboxPane.getChildren()) {
             if (node instanceof VBox) {
@@ -198,7 +199,6 @@ public class SearchController {
         recipeItems.clear();
 
 
-        List<String> typeList = new ArrayList<>();
 
         if(checkBox1.isSelected())
             typeList.add(checkBox1.getText().toUpperCase());
@@ -211,7 +211,7 @@ public class SearchController {
 
         log.info("Filtered the recipes: " + typeList.toString());
 
-        List<Recept> filteredRecipe = recipeService.searchFilteredRecipe(typeList);
+        List<Recept> filteredRecipe = recipeService.searchFilteredRecipe(typeList, ingredientsList);
 
         for (Recept aFilteredRecipe : filteredRecipe) {
             recipeItems.add(aFilteredRecipe.getName());
@@ -248,7 +248,7 @@ public class SearchController {
 
         log.info("Filtered the recipes: " + containList.toString());
 
-        List<Recept> filteredRecipe = recipeService.searchContainedRecipe(containList);
+        List<Recept> filteredRecipe = recipeService.searchContainedRecipe(containList, typeList, ingredientsList);
 
         for (Recept aFilteredRecipe : filteredRecipe) {
             recipeItems.add(aFilteredRecipe.getName());
