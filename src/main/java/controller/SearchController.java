@@ -151,6 +151,7 @@ public class SearchController {
 
     private List<String> ingredientsList = new ArrayList<>();
     private List<String> typeList = new ArrayList<>();
+    private List<String> containList = new ArrayList<>();
     @FXML
     public void searchItems() {
         log.info("Searched for the recipes");
@@ -235,7 +236,7 @@ public class SearchController {
         warningMessage.setText("");
         recipeItems.clear();
 
-        List<String> containList = new ArrayList<>();
+        containList = new ArrayList<>();
 
         if(checkBox11.isSelected())
             containList.add(checkBox11.getText().toUpperCase());

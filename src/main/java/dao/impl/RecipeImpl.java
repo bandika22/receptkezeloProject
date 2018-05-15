@@ -110,8 +110,8 @@ public class RecipeImpl implements RecipeDAO {
             if (ingredientsTypeList.stream().allMatch(typeList::contains)){
                 containedRecipeList.add(filteredRecipeList.get(i));
             }
+            typeList = new ArrayList<>();
         }
-        System.out.println(ingredientsTypeList.toString());
         return containedRecipeList;
     }
 }
