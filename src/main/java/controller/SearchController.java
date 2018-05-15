@@ -198,7 +198,7 @@ public class SearchController {
         warningMessage.setText("");
         recipeItems.clear();
 
-
+        typeList = new ArrayList<>();
 
         if(checkBox1.isSelected())
             typeList.add(checkBox1.getText().toUpperCase());
@@ -250,7 +250,8 @@ public class SearchController {
 
         List<Recept> filteredRecipe = recipeService.searchContainedRecipe(containList, typeList, ingredientsList);
 
-        for (Recept aFilteredRecipe : filteredRecipe) {
+        for (int i = 0; i < filteredRecipe.size(); i++) {
+            Recept aFilteredRecipe = filteredRecipe.get(i);
             recipeItems.add(aFilteredRecipe.getName());
         }
 
